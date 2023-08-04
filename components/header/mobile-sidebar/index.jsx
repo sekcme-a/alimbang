@@ -64,12 +64,12 @@ const Index = () => {
                 <p>{">"}</p>
               </div>
             </MenuItem>
-            <MenuItem onClick={()=>router.push("/")}>
+            {/* <MenuItem onClick={()=>router.push("/")}>
               <div className={styles.item_container} data-bs-dismiss="offcanvas">
                 <h6>상품안내</h6>
                 <p>{">"}</p>
               </div>
-            </MenuItem>
+            </MenuItem> */}
 
             {/* {mobileMenuData.map((item) => (
               <SubMenu
