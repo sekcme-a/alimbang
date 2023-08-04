@@ -1,0 +1,12 @@
+.company_logo_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo{
+  margin: 0 30px;
+}
+.company_logo_container h5{
+  margin-top: 10px;
+  font-weight: bold !important;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Gothic+A1:wght@500&family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&family=Orbit&display=swap');
+
+
+p.garosu_logo{
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: white;
+  font-weight: bold;
+}
+h1.garosu_logo_box{
+  margin-left: 50px;
+  font-size: 30px;
+  color: rgb(52, 208, 52);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+}
+h1.garosu_logo_box.white_bg{
+  color:rgb(27, 131, 27)
+}
+h1.garosu_logo_box.white_bg p.garosu_logo{
+  color: black;
+}
+
+
+
+
+p.garosu_logo_mobile{
+  font-size: 17px;
+  margin-right: 2px;
+  margin-bottom: 1px;
+  color: black;
+  font-weight: bold;
+}
+h1.garosu_logo_box_mobile{
+  margin-left: 10px;
+  font-size: 25px;
+  color: green;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+}
