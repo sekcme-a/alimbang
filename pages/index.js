@@ -11,7 +11,7 @@ const Index = () => {
     },[])
     return (
         <>
-            <Seo pageTitle="Home" />
+            <Seo pageTitle="메인페이지" />
             <Home />
         </>
     );

@@ -19,7 +19,7 @@ const House = () => {
   },[])
   return (
     <>
-      <Seo pageTitle="Job List V3" />
+      <Seo pageTitle="부동산" />
       <HouseList />
     </>
   );

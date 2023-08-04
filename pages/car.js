@@ -19,7 +19,7 @@ const Job = () => {
   },[])
   return (
     <>
-      <Seo pageTitle="Job List V3" />
+      <Seo pageTitle="중고차" />
       <CarList />
     </>
   );
