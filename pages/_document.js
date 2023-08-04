@@ -16,6 +16,7 @@ export default function Document() {
           name="keywords"
           content="안산가로수, 구인구직, 구인, 구직, 안산 구인, 안산 구직, "
         />
+        <meta name="naver-site-verification" content="dff4d9c1706e786ef9faec449c45bb43125b7cea" />
       </Head>
       <body>
         <Main />
