@@ -118,7 +118,7 @@ const JobBox = ({item}) => {
         {/* <h1 className={styles.companyName}>{data.companyName}</h1> */}
         <h2 className={styles.title}>{data.title}</h2>
 
-        <div className={styles.button_container}>
+        {/* <div className={styles.button_container}>
           <Button
             fullWidth
             variant="outlined"
@@ -129,7 +129,7 @@ const JobBox = ({item}) => {
           >
             상품안내
           </Button>
-        </div>
+        </div> */}
 
       </div>
     )
