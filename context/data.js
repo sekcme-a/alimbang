@@ -236,8 +236,5 @@ export function DataProvider(props){
     fetch_from_id
   }
 
-  if(isLoading)
-    return <></>
-
   return <dataContext.Provider value={value} {...props} />
 }
