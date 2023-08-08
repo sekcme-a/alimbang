@@ -20,18 +20,18 @@ const Component = () => {
     const fetchData = async () => {
       setIsLoading(true)
       let tempList = []
-      if(selected==="구인"){
-        if(commercialList.premium.job.length>8)
+      if(selected==="구인" && commercialList.all.length!==0){
+        if(commercialList?.premium?.job?.length>8)
           tempList = addDamBang("job",commercialList.premium.job)
-        else if(commercialList.specialPlus.job.length+commercialList.premium.job.length>16)
-          tempList = addDamBang("job",[...commercialList.premium.job,...commercialList.specialPlus.job.slice(0,8)])
+        else if(commercialList?.specialPlus?.job?.length+commercialList?.premium?.job?.length>16)
+          tempList = addDamBang("job",[...commercialList?.premium?.job,...commercialList?.specialPlus?.job?.slice(0,8)])
         else
-          tempList = addDamBang("job",[...commercialList.premium.job, ...commercialList.specialPlus.job])
+          tempList = addDamBang("job",[...commercialList?.premium?.job, ...commercialList?.specialPlus?.job])
       } else if (selected==="부동산"){
-        if(commercialList.premium.house.length>8)
-          tempList = addDamBang("house",commercialList.premium.house)
-        else if(commercialList.specialPlus.house.length+commercialList.premium.house.length>16)
-          tempList = addDamBang("house",[...commercialList.premium.house,...commercialList.specialPlus.house.slice(0,8)])
+        if(commercialList?.premium?.house?.length>8)
+          tempList = addDamBang("house",commercialList?.premium?.house)
+        else if(commercialList?.specialPlus?.house?.length+commercialList?.premium?.house?.length>16)
+          tempList = addDamBang("house",[...commercialList?.premium?.house,...commercialList?.specialPlus?.house?.slice(0,8)])
         else
           tempList = addDamBang("house",[...commercialList.premium.house, ...commercialList.specialPlus.house])
       } else if (selected==="중고차"){

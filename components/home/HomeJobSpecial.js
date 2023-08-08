@@ -41,7 +41,7 @@ const HomeJobSpecial = () => {
   return (
     <>
       <Slider {...settings} arrows={false}>
-        {commercialList.special.job.slice(0, 12).map((item, index) => (
+        {commercialList?.special?.job?.slice(0, 12).map((item, index) => (
           <div className="testimonial-block" key={index}>
             <div className="inner-box" style={{cursor:"pointer"}} onClick={()=>router.push(`commercial/${item.id}`)}>
               <h6>{item.companyName}</h6>
@@ -59,7 +59,7 @@ const HomeJobSpecial = () => {
             </div>
           </div>
         ))}
-        {commercialList.special.house.slice(0, 6).map((item, index) => (
+        {commercialList?.special?.house?.slice(0, 6).map((item, index) => (
           <div className="testimonial-block" key={index}>
             <div className="inner-box" style={{cursor:"pointer"}} onClick={()=>router.push(`commercial/${item.id}`)}>
               <h6>{item.companyName}</h6>
@@ -77,7 +77,7 @@ const HomeJobSpecial = () => {
             </div>
           </div>
         ))}
-        {commercialList.special.car.slice(0, 6).map((item, index) => (
+        {commercialList?.special?.car?.slice(0, 6).map((item, index) => (
           <div className="testimonial-block" key={index}>
             <div className="inner-box" style={{cursor:"pointer"}} onClick={()=>router.push(`commercial/${item.id}`)}>
               <h6>{item.companyName}</h6>
