@@ -46,7 +46,7 @@ const Component = () => {
       setIsLoading(false)
     }
     fetchData()
-  },[selected])
+  },[selected, commercialList])
 
   if(isLoading)
     return <div style={{height:"500px"}}><Loader /></div>

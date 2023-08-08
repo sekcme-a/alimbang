@@ -42,7 +42,7 @@ const HomeJobSpecial = () => {
     <>
       <Slider {...settings} arrows={false}>
         {commercialList?.special?.job?.slice(0, 12).map((item, index) => (
-          <div className="testimonial-block" key={index}>
+          <div className="testimonial-block" key={`${item.id}_${index}`}>
             <div className="inner-box" style={{cursor:"pointer"}} onClick={()=>router.push(`commercial/${item.id}`)}>
               <h6>{item.companyName}</h6>
               <h4 style={{wordBreak:"keep-all"}}>{item.title}</h4>
