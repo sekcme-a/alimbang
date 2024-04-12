@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <DataProvider>
-      <div className="page-wrapper">
+      <div className="page-wrapper" style={{backgroundColor:"rgb(249, 249, 249)"}}>
         <Component {...pageProps} />
 
         {/* Toastify */}

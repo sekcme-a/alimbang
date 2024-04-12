@@ -44,13 +44,13 @@ const JobSingleDynamicV3 = () => {
     <>
       <Seo pageTitle={data.title} />
 
-      <span className="header-span"></span>
+      <span className="header-span" ></span>
 
       <Header2 />
 
       <MobileMenu />
 
-      <section className="job-detail-section">
+      <section className="job-detail-section" >
         <div className="job-detail-outer" style={monitorSize>1189 ? {
           margin:'30px 150px',
           borderTop:"2px solid black",
@@ -58,7 +58,7 @@ const JobSingleDynamicV3 = () => {
           borderRight:"1px solid rgb(210,210,210)",
           borderBottom:"1px solid rgb(210,210,210)",
           padding:'30px 20px 0 20px',
-          marginBottom:"100px"
+          marginBottom:"100px",
           } : {}}>
           <div className="auto-container">
             <div className="row">
@@ -67,7 +67,7 @@ const JobSingleDynamicV3 = () => {
                   <div className="job-block-seven style-two">
                     <div className="inner-box">
                       <div className="content">
-                        <h5 style={{color: "blue"}}>{data?.commercialType}</h5>
+                        <h5 style={{color: "rgb(94, 90, 216)"}}>{data?.commercialType}</h5>
                         <h4 style={{fontWeight:"bold"}}>{data?.title}</h4>
                         <h6>{data?.companyValues?.companyName}</h6>
 

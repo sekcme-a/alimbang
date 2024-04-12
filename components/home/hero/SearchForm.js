@@ -1,12 +1,14 @@
-import Router from "next/router";
+import useData from "context/data";
+import Router, { useRouter } from "next/router";
 
 const SearchForm5 = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
+  const router = useRouter()
+
+  const {mainPageSearchInput, setMainPageSearchInput} = useData()
+
 
   return (
-    <form onClick={handleSubmit}>
+    <form onSubmit={(e) => e.preventDefault()}>
       <div className="row justify-content-center justify-content-md-between">
         {/* <!-- Form Group --> */}
         <div className="form-group col-lg-9">
@@ -14,18 +16,20 @@ const SearchForm5 = () => {
           <input
             type="text"
             name="field_name"
-            placeholder="구인공고, 직종 등을 검색하세요!"
+            placeholder="구인공고를 검색하세요!"
+            value={mainPageSearchInput}
+            onChange={(e)=>setMainPageSearchInput(e.target.value)}
           />
         </div>
 
         {/* <!-- Form Group --> */}
         <div className="form-group col-auto">
           <button
-            type="submit"
             className="theme-btn btn-style-two"
-            onClick={() => Router.push("/job-list-v9")}
+            onClick={() => router.push("/job")}
+            style={{fontWeight:"bold"}}
           >
-            검색
+            구인 검색
           </button>
         </div>
       </div>

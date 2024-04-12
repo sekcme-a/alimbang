@@ -11,14 +11,14 @@ p.garosu_logo{
 h1.garosu_logo_box{
   margin-left: 50px;
   font-size: 30px;
-  color: rgb(52, 208, 52);
+  color: rgb(94, 90, 216);
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-weight: bold;
 }
 h1.garosu_logo_box.white_bg{
-  color:rgb(27, 131, 27)
+  color:rgb(94, 90, 216);
 }
 h1.garosu_logo_box.white_bg p.garosu_logo{
   color: black;
@@ -37,7 +37,7 @@ p.garosu_logo_mobile{
 h1.garosu_logo_box_mobile{
   margin-left: 10px;
   font-size: 25px;
-  color: green;
+  color: rgb(94, 90, 216);;
   display: flex;
   align-items: flex-end;
   justify-content: center;

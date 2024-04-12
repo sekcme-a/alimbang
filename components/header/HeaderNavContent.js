@@ -1,3 +1,4 @@
+import useData from "context/data";
 import Link from "next/link";
 // import {
 //   blogItems,
@@ -15,6 +16,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const HeaderNavContent = () => {
+  const {handleSelectedQuery } = useData()
   const router = useRouter();
 
   return (
@@ -28,7 +30,7 @@ const HeaderNavContent = () => {
           {/* End homepage menu items */}
 
           <li>
-            <span className={router.asPath==="/job" ? "current" : ""} onClick={()=>router.push("/job")}>구인구직</span>
+            <span className={router.asPath==="/job" ? "current" : ""} onClick={()=>{handleSelectedQuery("jobSelect","전체");router.push("/job")}}>구인구직</span>
           </li>
           <li>
             <span className={router.asPath==="/house" ? "current" : ""} onClick={()=>router.push("/house")}>부동산</span>

@@ -47,6 +47,7 @@ const JobList = () => {
         const prem = addDamBang2("job", get_level_list(selectedList, "프리미엄 구인", "구인"))
         const spe = addDamBang2("job", [...get_level_list(selectedList, "스페셜+ 구인", "구인"),...get_level_list(selectedList, "스페셜 구인", "구인")])
         const nor = [...get_level_list(selectedList, "일반+ 구인", "구인"),...get_level_list(selectedList, "일반 구인", "구인")]
+
         setPremiumList(prem)
         setSpecialList(spe)
         setNormalList(nor)
@@ -55,8 +56,8 @@ const JobList = () => {
         if(prem.length+spe.length+nor.length===0){
             setPremiumList([{
                 id: "asdf",
-                companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-                title: "효과 빠른 구인! 안산 가로수",
+                companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+                title: "효과 빠른 구인! 시흥 알림방",
                 salary: "시급 10만원",
                 date: "주 5일",
                 time: "8시간",
@@ -65,8 +66,8 @@ const JobList = () => {
                 type: "dambang"
               },{
                 id: "asdf",
-                companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-                title: "효과 빠른 구인! 안산 가로수",
+                companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+                title: "효과 빠른 구인! 시흥 알림방",
                 salary: "시급 10만원",
                 date: "주 5일",
                 time: "8시간",
@@ -75,8 +76,8 @@ const JobList = () => {
                 type: "dambang"
               },{
                 id: "asdf",
-                companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-                title: "효과 빠른 구인! 안산 가로수",
+                companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+                title: "효과 빠른 구인! 시흥 알림방",
                 salary: "시급 10만원",
                 date: "주 5일",
                 time: "8시간",
@@ -86,8 +87,8 @@ const JobList = () => {
               }])
             setSpecialList([{
             id: "asdf",
-            companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-            title: "효과 빠른 구인! 안산 가로수",
+            companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+            title: "효과 빠른 구인! 시흥 알림방",
             salary: "시급 10만원",
             date: "주 5일",
             time: "8시간",
@@ -96,8 +97,8 @@ const JobList = () => {
             type: "dambang"
             },{
             id: "asdf",
-            companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-            title: "효과 빠른 구인! 안산 가로수",
+            companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+            title: "효과 빠른 구인! 시흥 알림방",
             salary: "시급 10만원",
             date: "주 5일",
             time: "8시간",
@@ -106,8 +107,8 @@ const JobList = () => {
             type: "dambang"
             },{
             id: "asdf",
-            companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-            title: "효과 빠른 구인! 안산 가로수",
+            companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+            title: "효과 빠른 구인! 시흥 알림방",
             salary: "시급 10만원",
             date: "주 5일",
             time: "8시간",
@@ -133,7 +134,7 @@ const JobList = () => {
             <MobileMenu />
             {/* End MobileMenu */}
 
-            {/* <Breadcrumb title="안산가로수 구인구직" meta="구인구직" /> */}
+            {/* <Breadcrumb title="시흥알림방 구인구직" meta="구인구직" /> */}
            
 
 
@@ -239,12 +240,13 @@ const JobList = () => {
                             {normalList.length!==0 &&   
                                 <>
                                     <h4 style={{marginTop:"30px", fontWeight:"bold", paddingLeft:"10px", marginBottom:"5px"}}>일반 구인정보</h4>
-                                    <Grid container sx={{mt:"10px !important", padding: "0 10px"}}>
+                                    <Grid container sx={{mt:"10px !important", padding: "0 10px"}} spacing={1}>
                                         {
                                                     
                                             normalList.map((item, index) => {
+                                                if(item.companyValues.companyName!=='조정희목사님')
                                                 return(
-                                                    <Grid item xs={12} sm={6} md={4} key={`${index}_${item.id}`}>
+                                                    <Grid item xs={12} sm={6} md={4} key={`${index}_${item.id}`} >
                                                         <JobBox item={item}/>
                                                     </Grid>
                                                 )

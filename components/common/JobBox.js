@@ -6,10 +6,10 @@ import { Button, Grid } from "@mui/material"
 
 
 const redOutlinedButtonStyle = {
-  color: 'green',           // Text color
-  borderColor: 'green',     // Outline color
+  color: "rgb(94, 90, 216)",           // Text color
+  borderColor: "rgb(94, 90, 216)",     // Outline color
   '&:hover': {
-    backgroundColor: 'green',    // Background color on hover (optional)
+    backgroundColor: "rgb(94, 90, 216)",    // Background color on hover (optional)
     color: 'white',             // Text color on hover (optional)
   },
 };
@@ -141,7 +141,11 @@ const JobBox = ({item}) => {
         <div>
           <h1>{data.companyValues.companyName}</h1>
           <h2>{data.title}</h2>
-          <p><strong>{data.salary}</strong>{` | ${data.date} | ${data.time} | ${data.location}`}</p>
+          <p><strong>{data.salary}</strong>
+            {data.date && ` | ${data.date}`}
+            {data.time && ` | ${data.time}`}
+            {data.location && ` | ${data.location}`}
+          </p>
         </div>
       </div>
     )
@@ -172,7 +176,7 @@ const JobBox = ({item}) => {
 
         <Grid item md={6} xs={data.level==="프리미엄 구인"||data.level==="일반 구인"||data.level==="일반+ 구인" ? 6 : 12} className={`${styles.info_item} ${styles.salary}`}>
           <div className={`icon flaticon-money-1`}/>
-          <p>{data.salary}</p>
+          <p>{data.salary ?? "-"}</p>
         </Grid>
 
         <Grid item md={6} xs={data.level==="프리미엄 구인"||data.level==="일반 구인"||data.level==="일반+ 구인" ? 6 : (data.date+data.time).length>8 ? 12 : 6}  className={styles.info_item}>
@@ -185,7 +189,7 @@ const JobBox = ({item}) => {
             :
               <div className={`icon flaticon-confirm-schedule`}/>
           }
-          <p>{data.date}</p>
+          <p>{data.date ?? `-`}</p>
         </Grid>
 
         <Grid item md={6} xs={6}  className={styles.info_item}>
@@ -198,7 +202,7 @@ const JobBox = ({item}) => {
             :
               <div className={`icon flaticon-car`}/>
           }
-          <p>{data.time}</p>
+          <p>{data.time?? "-"}</p>
         </Grid>
 
         <Grid item md={6} xs={data.level==="프리미엄 구인"||data.level==="일반 구인"||data.level==="일반+ 구인"? 6 : 12}  className={styles.info_item}>
@@ -211,7 +215,7 @@ const JobBox = ({item}) => {
             :
               <div className={`icon flaticon-maps-and-flags`}/>
           }
-          <p>{data.location}</p>
+          <p>{data.location?? "-"}</p>
         </Grid>
 
       </Grid>

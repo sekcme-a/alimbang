@@ -17,9 +17,13 @@ import {
 } from "../../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
 import styles from "./index.module.css"
+import useData from "context/data";
 
 const Index = () => {
   const router = useRouter();
+
+  const {handleSelectedQuery, selectedQuery} = useData()
+
 
   // const onItemClick = (url) => {
   //   if(router.asPath===url)
@@ -46,7 +50,7 @@ const Index = () => {
               </div>
             </MenuItem>
 
-            <MenuItem onClick={()=>router.push("/job")}>
+            <MenuItem onClick={()=>{handleSelectedQuery("jobSelect","전체");router.push("/job")}}>
               <div className={styles.item_container} data-bs-dismiss="offcanvas">
                 <h6>구인구직</h6>
                 <p>{">"}</p>

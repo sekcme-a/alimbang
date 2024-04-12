@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MobileSidebar from "./mobile-sidebar";
+import Image from "next/image";
 
 const MobileMenu = () => {
   return (
@@ -14,7 +15,14 @@ const MobileMenu = () => {
                 <Link href="/">
                   {/* <img src="/images/logo.svg" alt="brand" /> */}
                   <h1 className="garosu_logo_box_mobile">
-                    <p className="garosu_logo_mobile">안산</p>가로수
+                    {/* <p className="garosu_logo_mobile">시흥</p>알림방 */}
+                    <Image
+                      src="/images/alimbang_logo.png"
+                      alt="로고"
+                      width={100}
+                      height={30}
+                      style={{height: "22px"}}
+                    />
                   </h1>
                 </Link>
               </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import CopyrightFooter from "./CopyrightFooter";
 import FooterApps2 from "./FooterApps2";
 import FooterContent3 from "./FooterContent3";
+import Image from "next/image";
 
 const Footer = () => {
 
@@ -13,14 +14,20 @@ const Footer = () => {
             <div className="big-column col-xl-3 col-lg-3 col-md-12">
               <div className="footer-column about-widget">
                 <div className="logo">
-                  <h3 style={{fontSize:"19px", fontWeight:"bold"}}>안산<strong style={{fontSize:"28px", color: "green", marginLeft:"2px"}}>가로수</strong></h3>
+                  {/* <h3 style={{fontSize:"19px", fontWeight:"bold"}}>시흥<strong style={{fontSize:"28px", color: "rgb(94, 90, 216)", marginLeft:"2px"}}>알림방</strong></h3> */}
+                  <Image
+                    src="/images/alimbang_logo.png"
+                    alt="시흥알림방 로고"
+                    width={200}
+                    height={30}
+                  />
                 </div>
                 <p className="phone-num">
                   <span style={{fontWeight:'bold'}}>전화문의 </span>
-                  <a href="tel:031-411-0066" style={{fontWeight:"bold"}}>031-411-0066</a>
+                  <a href="tel:031-411-0066" style={{fontWeight:"bold"}}>031-411-0066 / 031-411-1191</a>
                 </p>
                 <p className="address">
-                  경기도 안산시 단원구 3051번지
+                  경기도 시흥시 신천로65
                   {/* <br /> 3051 1번지. <br /> */}
                   {/* <a href="mailto:support@superio.com" className="email">
                     support@superio.com

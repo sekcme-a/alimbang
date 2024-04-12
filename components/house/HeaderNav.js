@@ -49,8 +49,8 @@ const HeaderNav = () => {
         if(selectedQuery.jobSelect===item.value)
           return(
             <div key={index} className={styles.item_container} onClick={()=>onIconClick(item.value)}>
-              <div style={{color: "green"}}>{item.icon()}</div>
-              <p style={{color:'green'}}>{item.title}</p>
+              <div style={{color: "rgb(94, 90, 216)"}}>{item.icon()}</div>
+              <p style={{color:"rgb(94, 90, 216)"}}>{item.title}</p>
             </div>
           )
         else

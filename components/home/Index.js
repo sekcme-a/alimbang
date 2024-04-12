@@ -30,7 +30,7 @@ const Index = () => {
           <div className="sec-title text-center">
             <h2>스페셜 구인광고</h2>
             <div className="text">
-              안산 가로수의 스페셜 구인광고 입니다.
+              시흥 알림방의 스페셜 구인광고 입니다.
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Index = () => {
           <div className="sec-title text-center">
             <h2>광고 등록 방법</h2>
             <div className="text">
-              쉽고 빠르게 안산 가로수에 광고를 등록하실 수 있습니다.
+              쉽고 빠르게 시흥 알림방에 광고를 등록하실 수 있습니다.
             </div>
           </div>
           {/* End sec-title */}

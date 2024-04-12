@@ -3,6 +3,7 @@
 import { createContext, useState, useEffect,  useContext } from "react";
 import { firestore as db } from "firebase/firebase";
 import { useRouter } from "next/navigation";
+import FullScreenLoader from "components/FullScreenLoader";
 
 const dataContext = createContext()
 
@@ -58,7 +59,7 @@ export function DataProvider(props){
 
 
     const fetchData = async() => {
-      const query = await db.collection("type").doc("garosu").collection("commercials").where("mode","==","게재중").orderBy("savedAt","desc").get()
+      const query = await db.collection("type").doc("alimbang").collection("commercials").where("mode","==","게재중").orderBy("savedAt","desc").get()
       const commercialListData = query.docs.map(doc => ({...doc.data(), id: doc.id}))
 
       setCommercialList({
@@ -154,8 +155,8 @@ export function DataProvider(props){
     for(let i = 0; i<count;i++){
       tempList.push({
         id: "guide",
-        companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-        title: `효과 빠른 ${text}! 안산 가로수`,
+        companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+        title: `효과 빠른 ${text}! 시흥 알림방`,
         salary: "시급 10만원",
         date: "주 5일",
         time: "8시간",
@@ -198,8 +199,8 @@ export function DataProvider(props){
     for(let i = 0; i<count;i++){
       tempList.push({
         id: "asdf",
-        companyValues: {companyName: "안산 가로수", logoUrl:"/images/ansangarosu-logo.png" },
-        title: `효과 빠른 ${text}! 안산 가로수`,
+        companyValues: {companyName: "시흥 알림방", logoUrl:"/images/alimbang_logo.png" },
+        title: `효과 빠른 ${text}! 시흥 알림방`,
         salary: "시급 10만원",
         date: "주 5일",
         time: "8시간",
@@ -222,6 +223,8 @@ export function DataProvider(props){
   }
 
 
+  const [mainPageSearchInput, setMainPageSearchInput] = useState("")
+
   const value = {
     commercialList,
     addDamBang,
@@ -233,8 +236,11 @@ export function DataProvider(props){
     setType,
     get_level_list,
     selectedList,
-    fetch_from_id
+    fetch_from_id,
+    mainPageSearchInput, setMainPageSearchInput
   }
 
+  if(isLoading)
+  return <FullScreenLoader />
   return <dataContext.Provider value={value} {...props} />
 }

@@ -1,4 +1,4 @@
-
+  
 .main_container{
   position: relative;
   padding: 16px 20px 22px 30px;
@@ -79,7 +79,8 @@
 }
 
 .title{
-  font-size: 16px !important;
+  /* margin-top: 4px; */
+  font-size: 17px !important;
   font-weight: 800 !important;
   word-break: keep-all;
   /* margin-top: 5px !important; */
@@ -105,7 +106,7 @@
 }
 .salary p{
   /* font-weight: bold; */
-  color: #df3f17
+  color: #d12a00
 }
 
 
@@ -130,18 +131,20 @@
 .common_container h1{
   font-size: 13px;
   margin: 0;
-  color: blue;
+  color: rgb(94, 90, 216);;
 }
 .common_container h2{
-  font-size: 15px;
+  font-size: 17px;
+  margin-top: 4px;
   font-weight: bold;
 }
 .common_container p{
   font-size: 12px;
   line-height: normal;
+  margin-top: 3px;
 }
 .common_container strong{
-  color: #df3f17;
+  color: #b4300f;
 }
 @media (max-width: 1200px) {
   .main_container{

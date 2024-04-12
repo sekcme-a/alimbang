@@ -35,8 +35,8 @@ const Hero = () => {
       <div className="auto-container">
         <div className="content-box">
           <div className="title-box" data-wow-delay="500" data-aos="fade-up">
-            <h3>안산 가로수</h3>
-            <p style={{lineHeight:"1.2"}}>안산, 시흥, 구인구직, 부동산, 아파트, 자동차, 생활정보를 제공합니다.</p>
+            <h3>시흥 알림방</h3>
+            <p style={{lineHeight:"1.2"}}>시흥의 구인구직, 부동산, 아파트, 자동차, 생활정보를 제공합니다.</p>
           </div>
           {/* End title-box */}
 

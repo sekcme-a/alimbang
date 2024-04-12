@@ -15,10 +15,10 @@ const SearchOrApplyJob = () => {
         </div>
 
         <div className="btn-box">
-          <Link href="/applyJob" className="theme-btn btn-one">
+          {/* <Link href="/applyJob" className="theme-btn btn-one">
             구인공고 등록
-          </Link>
-          <Link href="/job" className="theme-btn btn-two">
+          </Link> */}
+          <Link href="/job" className="theme-btn btn-two" style={{fontWeight:"bold"}}>
             구인구직 보러가기
           </Link>
         </div>

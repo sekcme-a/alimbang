@@ -11,7 +11,7 @@ const Index = () => {
     },[])
     return (
         <>
-            <Seo pageTitle="안산가로수" />
+            <Seo pageTitle="시흥알림방" />
             <Home />
         </>
     );

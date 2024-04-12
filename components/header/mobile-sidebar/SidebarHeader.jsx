@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const SidebarHeader = () => {
@@ -5,7 +6,15 @@ const SidebarHeader = () => {
     <div className="pro-header">
       <Link href="/">
         <h1 className="garosu_logo_box_mobile">
-          <p className="garosu_logo_mobile">안산</p>가로수
+          {/* <p className="garosu_logo_mobile">시흥</p>알림방 */}
+          <Image
+                    src="/images/alimbang_logo.png"
+                    alt="로고"
+                    width={150}
+                    height={40}
+                    // style={{ objectFit: 'contain' }}
+                    // fill
+                  />
         </h1>
       </Link>
       {/* End logo */}

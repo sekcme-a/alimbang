@@ -14,9 +14,11 @@ import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import RestaurantOutlinedIcon from '@mui/icons-material/RestaurantOutlined';
 import LibraryMusicOutlinedIcon from '@mui/icons-material/LibraryMusicOutlined';
+import ReorderOutlinedIcon from '@mui/icons-material/ReorderOutlined';
 
 const FONT_SIZE={fontSize:"30px"}
 const data = [
+  {title: "전체", value:"전체", icon: ()=><ReorderOutlinedIcon sx={FONT_SIZE}/>},
   {title: "기술/생산", value:"기술/생산직", icon: ()=><SettingsSuggestOutlinedIcon sx={FONT_SIZE}/>},
   {title: "사무/경리", value:"사무/경리", icon: ()=><DevicesOutlinedIcon sx={FONT_SIZE}/>},
   {title: "전문직", value:"전문직", icon: ()=><CoPresentOutlinedIcon sx={FONT_SIZE}/>},
@@ -52,8 +54,8 @@ const HeaderNav = () => {
         if(selectedQuery.jobSelect===item.value)
           return(
             <div key={index} className={styles.item_container} onClick={()=>onIconClick(item.value)}>
-              <div style={{color: "green"}}>{item.icon()}</div>
-              <p style={{color:'green'}}>{item.title}</p>
+              <div style={{color: "rgb(94, 90, 216)"}}>{item.icon()}</div>
+              <p style={{color:"rgb(94, 90, 216)"}}>{item.title}</p>
             </div>
           )
         else

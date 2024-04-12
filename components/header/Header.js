@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import HeaderNavContent from "./HeaderNavContent";
+import Image from "next/image";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -32,8 +33,16 @@ const Header = () => {
               <div className="logo">
                 <Link href="/">
                   {/* <img src="/images/header-logo.svg" alt="brand" /> */}
-                  <h1 className="garosu_logo_box">
-                    <p className="garosu_logo">안산</p>가로수
+                  <h1 className="garosu_logo_box" style={{position:"relative"}}>
+                    <p className="garosu_logo">시흥</p>알림방
+                    {/* <Image
+                      src="/images/alimbang_logo.png"
+                      alt="로고"
+                      width={400}
+                      height=
+                      style={{ objectFit: 'contain' }}
+                      fill
+                    /> */}
                   </h1>
                 </Link>
               </div>

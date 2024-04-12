@@ -55,7 +55,7 @@ const Component = () => {
     <div className={styles.main_container}>
       <h1>프리미엄 {selected}</h1>
       <h2>
-        안산 가로수의 프리미엄 {selected}
+        시흥 알림방의 프리미엄 {selected}
         을 확인하세요!
       </h2>
 
