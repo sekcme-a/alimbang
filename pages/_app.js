@@ -4,7 +4,7 @@ import "public/styles/index.scss";
 import { useEffect } from "react";
 import ScrollToTop from "../components/common/ScrollTop";
 import { Provider } from "react-redux";
-import { store } from "../app/store";
+import { store } from "../dapp/store";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 

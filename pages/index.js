@@ -4,6 +4,11 @@ import Home from "components/home/Index";
 import { useEffect } from "react";
 import useData from "context/data";
 
+
+export const metadata = {
+    title:"shitbal"
+}
+
 const Index = () => {
     const {setType} = useData()
     useEffect(() => {

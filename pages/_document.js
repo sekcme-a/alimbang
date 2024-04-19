@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="kr">
       <Head>
         <meta charSet="UTF-8" />
-        <link passhref rel="icon" href="/favicon.ico" />
+        <link passhref rel="icon" href="https://alimbang.kr/images/favicon.ico" />
 
         <link
           rel="stylesheet"
