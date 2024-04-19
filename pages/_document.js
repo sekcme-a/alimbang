@@ -18,7 +18,7 @@ export default function Document() {
         />
         <meta property="og:site_name" content="시흥알림방" />
         <meta name="naver-site-verification" content="89d101bc3792ea563ba4ed4239f1cff7d0525ad2" />
-        <meta name="google-site-verification" content="98uSvYnGQ00LwGZxGBAGB7-s5if5Sk7bYc4gWX32D5E" />
+        <meta name="google-site-verification" content="PUcgghKVXAeS3BDMxXZWg_8IQsLu_b_bxtqMRKwJF2Q" />
       </Head>
       <body>
         <Main />
