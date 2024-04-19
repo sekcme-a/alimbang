@@ -1,8 +1,9 @@
 import Head from "next/head";
 
 const Seo = ({ title,description,  url }) => (
-  <>
+
     <Head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <title>
         {title || `시흥알림방`}
       </title>
@@ -13,7 +14,7 @@ const Seo = ({ title,description,  url }) => (
           "시흥 알림방, 빠르고 편리한 구인구직. 지금 바로 구인해보세요!"
         }
       />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   
       <meta property="og:title" content={title || "시흥알림방"} />
       <meta property="og:description"
         content={
@@ -27,7 +28,7 @@ const Seo = ({ title,description,  url }) => (
       <meta property="og:article:author" content="시흥알림방" />
       <link rel="canonical" href={url||"https://xn--2i0bm5iryeh7q.kr"} />
     </Head>
-  </>
+  
 );
 
 export default Seo;
