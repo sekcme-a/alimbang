@@ -28,6 +28,9 @@ const JobSingleDynamicV3 = ({commercialData}) => {
     if(!commercialData){
       alert("해당 광고는 삭제됬거나 존재하지 않습니다.")
       router.back()
+    }else if(commercialData.mode!=="게재중"){
+      alert("해당 광고는 현재 게재중이지 않습니다.")
+      router.back()
     }
   },[commercialData])
 
@@ -123,7 +126,6 @@ const JobSingleDynamicV3 = ({commercialData}) => {
 };
 
 export async function getServerSideProps ({params}) {
-  console.log(params.id)
   const doc = await db.collection('type').doc('alimbang').collection("commercials").doc(params.id).get()
   if(doc.exists){
     const commercialData = {
