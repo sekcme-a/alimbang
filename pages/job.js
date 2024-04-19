@@ -19,7 +19,7 @@ const Job = () => {
   },[])
   return (
     <>
-      <Seo pageTitle="구인" />
+      <Seo title="구인구직 - 시흥알림방" description="시흥알림방의 구인구직 광고들을 확인해보세요!" url="https://alimbang.kr/job" />
       <JobList />
     </>
   );

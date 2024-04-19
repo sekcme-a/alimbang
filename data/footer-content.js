@@ -3,9 +3,10 @@ module.exports = [
     id: 1,
     title: "광고 보기",
     menuList: [
-      { name: "구인구직", route: "/job-list-v11" },
-      { name: "부동산", route: "/job-list-v3" },
-      { name: "중고차", route: "/candidates-dashboard/dashboard" },
+      { name: "구인구직", route: "/job" },
+      { name: "부동산", route: "/house" },
+      { name: "중고차", route: "/car" },
+      { name: "신문보기", route: "/newspaper" },
     ],
   },
   // {
@@ -30,7 +31,7 @@ module.exports = [
     id: 4,
     title: "MOU",
     menuList: [
-      { name: "안산가로수", route: "https://www.ansangarosu.com" },
+      { name: "안산가로수", route: "https://www.alimbang.kr" },
       { name: "서부뉴스", route: "http://www.westnews.co.kr/" },
       { name: "안산인터넷뉴스", route: "http://asinews.co.kr/" },
       { name: "시흥인터넷뉴스", route: "http://www.shinews.co.kr/" },

@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="kr">
       <Head>
         <meta charSet="UTF-8" />
-        <link passHref rel="icon" href="/favicon.ico" />
+        <link passhref rel="icon" href="/favicon.ico" />
 
         <link
           rel="stylesheet"
@@ -16,6 +16,7 @@ export default function Document() {
           name="keywords"
           content="시흥알림방, 구인구직, 구인, 구직, 시흥 구인, 시흥 구직, "
         />
+        <meta property="og:site_name" content="시흥알림방" />
         <meta name="naver-site-verification" content="dff4d9c1706e786ef9faec449c45bb43125b7cea" />
         <meta name="google-site-verification" content="98uSvYnGQ00LwGZxGBAGB7-s5if5Sk7bYc4gWX32D5E" />
       </Head>

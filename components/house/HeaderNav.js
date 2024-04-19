@@ -13,9 +13,17 @@ import WarehouseRoundedIcon from '@mui/icons-material/WarehouseRounded';
 import OtherHousesOutlinedIcon from '@mui/icons-material/OtherHousesOutlined';
 import OtherHousesTwoToneIcon from '@mui/icons-material/OtherHousesTwoTone';
 
+import DomainAddOutlinedIcon from '@mui/icons-material/DomainAddOutlined';
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import VillaOutlinedIcon from '@mui/icons-material/VillaOutlined';
+import VillaIcon from '@mui/icons-material/Villa';
 
 const FONT_SIZE={fontSize:"30px"}
 const data = [
+  {title: "아파트매매", value:"아파트매매", icon: ()=><DomainAddOutlinedIcon sx={FONT_SIZE}/>},
+  {title: "아파트임대", value:"아파트임대", icon: ()=><BusinessOutlinedIcon sx={FONT_SIZE}/>},
+  {title: "빌라매매", value:"빌라매매", icon: ()=><VillaIcon sx={FONT_SIZE}/>},
+  {title: "빌라임대", value:"빌라임대", icon: ()=><VillaOutlinedIcon sx={FONT_SIZE}/>},
   {title: "주택매매", value:"주택매매", icon: ()=><HomeTwoToneIcon sx={FONT_SIZE}/>},
   {title: "주택임대", value:"주택임대", icon: ()=><HomeOutlinedIcon sx={FONT_SIZE}/>},
   {title: "상가매매", value:"상가매매", icon: ()=><CorporateFareTwoToneIcon sx={FONT_SIZE}/>},

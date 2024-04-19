@@ -40,6 +40,7 @@ const Header2 = () => {
                     alt="로고"
                     width={190}
                     height={70}
+                    objectFit="contain"
                     // style={{ objectFit: 'contain' }}
                     // fill
                   />

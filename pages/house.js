@@ -19,7 +19,7 @@ const House = () => {
   },[])
   return (
     <>
-      <Seo pageTitle="부동산" />
+      <Seo title="부동산 - 시흥알림방" description="시흥알림방에서 부동산 광고들을 한눈에 확인하세요!" url="https://alimbang.kr/house" />
       <HouseList />
     </>
   );

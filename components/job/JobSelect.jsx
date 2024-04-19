@@ -10,7 +10,7 @@ const JobSelect = () => {
     { id: 2, name: "기술/생산직", value: "기술/생산직", isChecked: false },
     { id: 3, name: "사무/경리", value: "사무/경리", isChecked: false },
     { id: 4, name: "전문직", value: "전문직", isChecked: false },
-    { id: 5, name: "교사강사/교육정보", value: "교사강사/교육정보", isChecked: false },
+    { id: 5, name: "홍보", value: "홍보", isChecked: false },
     { id: 6, name: "영업직", value: "영업직", isChecked: false },
     { id: 7, name: "서비스직", value: "서비스직", isChecked: false },
     { id: 8, name: "운전직", value: "운전직", isChecked: false },

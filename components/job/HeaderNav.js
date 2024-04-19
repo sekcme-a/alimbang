@@ -22,7 +22,7 @@ const data = [
   {title: "기술/생산", value:"기술/생산직", icon: ()=><SettingsSuggestOutlinedIcon sx={FONT_SIZE}/>},
   {title: "사무/경리", value:"사무/경리", icon: ()=><DevicesOutlinedIcon sx={FONT_SIZE}/>},
   {title: "전문직", value:"전문직", icon: ()=><CoPresentOutlinedIcon sx={FONT_SIZE}/>},
-  {title: "교사강사", value:"교사강사/교육정보", icon: ()=><SchoolOutlinedIcon sx={FONT_SIZE}/>},
+  {title: "교사강사", value:"홍보", icon: ()=><SchoolOutlinedIcon sx={FONT_SIZE}/>},
   {title: "영업직", value:"영업직", icon: ()=><PointOfSaleOutlinedIcon sx={FONT_SIZE}/>},
   {title: "서비스직", value:"서비스직", icon: ()=><ForumOutlinedIcon sx={FONT_SIZE}/>},
   {title: "운전직", value:"운전직", icon: ()=><DriveEtaOutlinedIcon sx={FONT_SIZE}/>},

@@ -1,13 +1,12 @@
 import Link from "next/link";
 import CopyrightFooter from "./CopyrightFooter";
-import FooterApps2 from "./FooterApps2";
 import FooterContent3 from "./FooterContent3";
 import Image from "next/image";
 
 const Footer = () => {
 
   return (
-    <footer className="main-footer style-five" style={{backgroundColor:"rgb(248,248,248"}}>
+    <footer className="main-footer style-five" style={{backgroundColor:"rgb(248,248,248", marginTop:"20px"}}>
       <div className="auto-container" style={{borderTop:"1px solid rgb(222,222,222)"}}>
         <div className="widgets-section" data-aos="fade-up" >
           <div className="row">
@@ -20,11 +19,12 @@ const Footer = () => {
                     alt="시흥알림방 로고"
                     width={200}
                     height={30}
+                    objectFit="contain"
                   />
                 </div>
                 <p className="phone-num">
                   <span style={{fontWeight:'bold'}}>전화문의 </span>
-                  <a href="tel:031-411-0066" style={{fontWeight:"bold"}}>031-411-0066 / 031-411-1191</a>
+                  <a href="tel:031-313-9330" style={{fontWeight:"bold"}}>031-313-9330 / 031-314-9330</a>
                 </p>
                 <p className="address">
                   경기도 시흥시 신천로65

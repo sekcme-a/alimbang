@@ -17,7 +17,7 @@ const SidebarFooter = () => {
         <div className="contact-info">
           <span className="phone-num">
             <span>전화 문의</span>
-            <a href="tel:031-411-0066">Tel. 031-411-0066 / 031-411-1191</a>
+            <a href="tel:031-313-9330">Tel. 031-313-9330 / 031-314-9330</a>
           </span>
           <span className="address">
             경기도 시흥시 신천로 65

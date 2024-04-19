@@ -18,6 +18,7 @@ import {
 import { useRouter } from "next/router";
 import styles from "./index.module.css"
 import useData from "context/data";
+import SidebarBanner from "./SidebarBanner";
 
 const Index = () => {
   const router = useRouter();
@@ -68,6 +69,12 @@ const Index = () => {
                 <p>{">"}</p>
               </div>
             </MenuItem>
+            <MenuItem onClick={()=>router.push("/newspaper")}>
+              <div className={styles.item_container} data-bs-dismiss="offcanvas">
+                <h6>신문보기</h6>
+                <p>{">"}</p>
+              </div>
+            </MenuItem>
             {/* <MenuItem onClick={()=>router.push("/")}>
               <div className={styles.item_container} data-bs-dismiss="offcanvas">
                 <h6>상품안내</h6>
@@ -103,6 +110,8 @@ const Index = () => {
           </Menu>
         </Sidebar>
       </ProSidebarProvider>
+
+      <SidebarBanner />
 
       <SidebarFooter />
     </div>

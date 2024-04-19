@@ -12,6 +12,7 @@ const SidebarHeader = () => {
                     alt="로고"
                     width={150}
                     height={40}
+                    objectFit="contain"
                     // style={{ objectFit: 'contain' }}
                     // fill
                   />

@@ -7,9 +7,13 @@ const JobSelect = () => {
 
   const [datePost, setDatePost] = useState([
     { id: 1, name: "전체", value: "전체", isChecked: true },
+    { id: 2, name: "아파트매매", value: "아파트매매", isChecked: true },
+    { id: 2, name: "아파트임대", value: "아파트임대", isChecked: true },
+    { id: 2, name: "빌라매매", value: "빌라매매", isChecked: true },
+    { id: 2, name: "빌라임대", value: "빌라임대", isChecked: true },
     { id: 2, name: "주택매매", value: "주택매매", isChecked: true },
     { id: 3, name: "주택임대", value: "주택임대", isChecked: true },
-    { id: 4, name: "상가매매", value: "상가매매", isChecked: true },
+    { id: 4, name: "상가매매", value: "상가매매", isChecked: true },  
     { id: 5, name: "상가임대", value: "상가임대", isChecked: true },
     { id: 6, name: "공장매매", value: "공장매매", isChecked: true },
     { id: 7, name: "공장임대", value: "공장임대", isChecked: true },

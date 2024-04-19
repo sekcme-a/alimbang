@@ -38,6 +38,9 @@ const HeaderNavContent = () => {
           <li>
             <span className={router.asPath==="/car" ? "current" : ""} onClick={()=>router.push("/car")}>중고차</span>
           </li>
+          <li>
+            <span className={router.asPath==="/newspaper" ? "current" : ""} onClick={()=>router.push("/newspaper")}>신문보기</span>
+          </li>
           {/* <li>
             <span className={router.asPath==="/guide" ? "current" : ""} onClick={()=>router.push("/guide")}>상품안내</span>
           </li> */}

@@ -19,9 +19,10 @@ const MobileMenu = () => {
                     <Image
                       src="/images/alimbang_logo.png"
                       alt="로고"
-                      width={100}
+                      width={130}
                       height={30}
-                      style={{height: "22px"}}
+                      style={{height: "22px", objectFit:"contain"}}
+                      objectFit="contain"
                     />
                   </h1>
                 </Link>
@@ -34,7 +35,7 @@ const MobileMenu = () => {
           </div>
           {/* End .nav-outer */}
 
-          <div className="outer-box">
+          <div className="outer-box" style={{paddingRight:"8px"}}>
             {/* <div className="login-box">
               <a
                 href="#"

@@ -10,3 +10,15 @@
   margin-top: 10px;
   font-weight: bold !important;
 }
+
+@media screen and (min-width: 1190px) {
+  .detail_outer{
+    margin: 30px 150px;
+    border-top: 2px solid black;
+    border-left: 1px solid rgb(210,210,210);
+    border-right: 1px solid rgb(210,210,210);
+    border-bottom: 1px solid rgb(210,210,210);
+    padding: 30px 20px 0 20px;
+    margin-bottom: 100px;
+  }
+}

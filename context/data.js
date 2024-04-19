@@ -11,8 +11,8 @@ export default function useData(){
     return useContext(dataContext)
 }
 
-const jobTypes = ['기술/생산직','사무/경리','전문직','교사강사/교육정보','영업직','서비스직','운전직','배달직','현장직','아르바이트/기타구인','요리음식업','유흥서비스업']
-const houseTypes = ['주택매매','주택임대','상가매매','상가임대','공장매매','공장임대','창고매매','창고임대','기타매매','기타임대']
+const jobTypes = ['기술/생산직','사무/경리','전문직','홍보','영업직','서비스직','운전직','배달직','현장직','아르바이트/기타구인','요리음식업','유흥서비스업']
+const houseTypes = ['아파트임대','아파트매매','빌라임대','빌라매매','주택매매','주택임대','상가매매','상가임대','공장매매','공장임대','창고매매','창고임대','기타매매','기타임대']
 const carTypes = ['현대','기아','르노코리아','쌍용','쉐보래(대우)','기타']
 
 
@@ -237,10 +237,9 @@ export function DataProvider(props){
     get_level_list,
     selectedList,
     fetch_from_id,
-    mainPageSearchInput, setMainPageSearchInput
+    mainPageSearchInput, setMainPageSearchInput,
+    isLoading
   }
 
-  if(isLoading)
-  return <FullScreenLoader />
   return <dataContext.Provider value={value} {...props} />
 }

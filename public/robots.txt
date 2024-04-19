@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow:/
-Sitemap: https://ansangarosu.com/sitemap.xml
+Sitemap: https://alimbang.kr/sitemap.xml

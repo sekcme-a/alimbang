@@ -88,14 +88,14 @@ const Component = () => {
         {list.length!==0 && list.map((item, index) => {
           if(item.level==="프리미엄 구인"){
             return(
-              <Grid item xs={6} sm={4} md={3} key={`${item.id}_${index}_${item.title}`}>
+              <Grid item xs={12} sm={6} md={3} key={`${item.id}_${index}_${item.title}`}>
                 <JobBox mode="premium" item={item}/>
               </Grid>
             )
           }
           else
             return(
-              <Grid item xs={6} sm={4} md={3} key={`${item.id}_${index}_${item.title}`}>
+              <Grid item xs={12} sm={6} md={3} key={`${item.id}_${index}_${item.title}`}>
                 <JobBox mode="special+" item={item}/>
               </Grid>
             )

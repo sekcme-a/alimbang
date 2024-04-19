@@ -13,6 +13,7 @@ import { DataProvider } from "context/data";
 import "components/header/header.css"
 // import "components/home/hero/hero.css"
 import "public/styles/custom.css"
+import FullScreenLoader from "components/FullScreenLoader";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -49,6 +50,7 @@ function MyApp({ Component, pageProps }) {
         />
         {/* <!-- Scroll To Top --> */}
         <ScrollToTop />
+        <FullScreenLoader />
       </div>
       </DataProvider>
     </Provider>
