@@ -53,7 +53,7 @@ const JobDetailsDescriptions = ({data}) => {
         }
         <h4 style={{marginTop:"50px"}}>상세정보</h4>
         {data.commercialUrl && 
-          <Image
+          <img
             src={data.commercialUrl} alt={data.title}
             width={1200}
             height={1000}
