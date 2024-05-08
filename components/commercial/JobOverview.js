@@ -60,6 +60,7 @@ const JobOverView = ({data}) => {
     return (
       <ul>
         <li>
+          
           <i className="icon icon-salary"></i>
           <h5 style={{fontWeight:"bold"}}>매매가:</h5>
           <span style={{color: 'red'}}>{filtered_text(data.salary)}</span>

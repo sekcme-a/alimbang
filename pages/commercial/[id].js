@@ -40,7 +40,8 @@ const JobSingleDynamicV3 = () => {
           condition: doc.data().condition ?? null,
           commercialUrl: doc.data().commercialUrl ?? null,
           content: doc.data().content ?? null,
-          contact: doc.data().contact ?? null
+          contact: doc.data().contact ?? null,
+          type: doc.data().type ?? null,
         }
         setCommercialData(comDa)
       }else{
