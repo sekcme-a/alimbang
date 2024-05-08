@@ -90,7 +90,7 @@ const JobSingleDynamicV3 = () => {
                   </div>
                 }
                 <div >
-                  <JobDetailsDescriptions data={commercialData}/>
+                  {commercialData && <JobDetailsDescriptions data={commercialData}/>}
                 </div>
               </div>
 
