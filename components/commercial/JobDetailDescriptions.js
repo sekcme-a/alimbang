@@ -57,10 +57,11 @@ const JobDetailsDescriptions = ({data}) => {
             src={data.commercialUrl} alt={data.title}
             width={1200}
             height={1000}
-            objectFit="contain"
+            style={{objectFit:"contain"}}
             loading="lazy"
           />
         }
+        <p>{data.commercialUrl}</p>
         <p className={styles.content}>{data.content}</p>
       </div>
     </div>
