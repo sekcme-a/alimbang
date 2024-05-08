@@ -5,7 +5,7 @@ const SidebarHeader = () => {
   return (
     <div className="pro-header">
       <Link href="/">
-        <h1 className="garosu_logo_box_mobile">
+        <h2 className="garosu_logo_box_mobile">
           {/* <p className="garosu_logo_mobile">시흥</p>알림방 */}
           <Image
                     src="/images/alimbang_logo.png"
@@ -16,7 +16,7 @@ const SidebarHeader = () => {
                     // style={{ objectFit: 'contain' }}
                     // fill
                   />
-        </h1>
+        </h2>
       </Link>
       {/* End logo */}
 

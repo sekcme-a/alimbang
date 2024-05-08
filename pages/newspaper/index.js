@@ -19,7 +19,7 @@ const Newspaper = () => {
       <Header2 />
       <MobileMenu />
       <div className={styles.main_container}>
-        <h3 className={styles.title}>시흥 알림방의 최근 발행한 신문 목록입니다.</h3>
+        <h1 className={styles.title}>시흥 알림방의 최근 발행한 신문 목록입니다.</h1>
         <p>최근 12개의 신문만 표시됩니다.</p>
 
         <NewspaperList />

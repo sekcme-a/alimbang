@@ -33,7 +33,7 @@ const Header2 = () => {
           <div className="logo-box">
             <div className="logo">
               <Link href="/">
-                <h1 className="garosu_logo_box white_bg">
+                <h2 className="garosu_logo_box white_bg">
                   {/* <p className="garosu_logo">시흥</p>알림방 */}
                   <Image
                     src="/images/alimbang_logo.png"
@@ -44,7 +44,7 @@ const Header2 = () => {
                     // style={{ objectFit: 'contain' }}
                     // fill
                   />
-                </h1>
+                </h2>
               </Link>
             </div>
           </div>

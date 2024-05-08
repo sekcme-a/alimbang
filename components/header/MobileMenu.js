@@ -14,17 +14,17 @@ const MobileMenu = () => {
               <div className="logo">
                 <Link href="/">
                   {/* <img src="/images/logo.svg" alt="brand" /> */}
-                  <h1 className="garosu_logo_box_mobile">
+                  <h2 className="garosu_logo_box_mobile">
                     {/* <p className="garosu_logo_mobile">시흥</p>알림방 */}
                     <Image
                       src="/images/alimbang_logo.png"
                       alt="로고"
-                      width={130}
+                      width={150}
                       height={30}
                       style={{height: "22px", objectFit:"contain"}}
                       objectFit="contain"
                     />
-                  </h1>
+                  </h2>
                 </Link>
               </div>
             </div>

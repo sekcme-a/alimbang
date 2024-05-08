@@ -10,7 +10,7 @@ p.garosu_logo{
   color: white;
   font-weight: bold;
 }
-h1.garosu_logo_box{
+h2.garosu_logo_box{
   margin-left: 50px;
   font-size: 30px;
   color: rgb(94, 90, 216);
@@ -19,10 +19,10 @@ h1.garosu_logo_box{
   justify-content: center;
   font-weight: bold;
 }
-h1.garosu_logo_box.white_bg{
+h2.garosu_logo_box.white_bg{
   color:rgb(94, 90, 216);
 }
-h1.garosu_logo_box.white_bg p.garosu_logo{
+h2.garosu_logo_box.white_bg p.garosu_logo{
   color: black;
 }
 
@@ -44,4 +44,23 @@ h1.garosu_logo_box_mobile{
   align-items: flex-end;
   justify-content: center;
   font-weight: bold;
+}
+h1.garosu_logo_box{
+  margin-left: 50px;
+  font-size: 30px;
+  color: rgb(94, 90, 216);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+}
+p.garosu_logo{
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: white;
+  font-weight: bold;
+  display:inline-block;
+  display: flex;
+  align-items: flex-end;
 }

@@ -202,7 +202,7 @@ const JobList = () => {
                             {/* <FilterJobsBox /> */}
                             {premiumList.length!==0 && 
                                 <>
-                                    <h4 style={{fontWeight:"bold", paddingLeft:"10px", marginBottom:"5px"}}>프리미엄 중고차정보</h4>
+                                    <h1 style={{fontWeight:"bold", paddingLeft:"10px", marginBottom:"5px", fontSize:"18px"}}>프리미엄 중고차정보</h1>
                                     <Grid container spacing={{md:2, sm: 1, xs:1}} sx={{mt:"0px !important", padding: "0 10px", mb:"50px"}}>
                                         {
                                             

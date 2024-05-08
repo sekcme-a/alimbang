@@ -3,11 +3,11 @@
   width: 100%;
   text-align: center;
 }
-.main_container h1{
+.main_container h2{
   font-size: 28px;
   font-weight: bold;
 }
-.main_container h2{
+.main_container h3{
   font-size: 15px;
   margin-top: 15px;
   color: #666;

@@ -132,7 +132,7 @@ const JobBox = ({item}) => {
     return(
       <div className={styles.common_container} ref={cardRef} onClick={()=>router.push(`/commercial/${data.id}`)} style={data.level==="일반+ 구인" ? {border:"1.5px solid black", height:"90px"}: {}}>
         <div className={styles.con}>
-          <h1>{data.companyValues.companyName}</h1>
+          <h5>{data.companyValues.companyName}</h5>
           <h2 style={{width: `${cardWidth-30}px`}}>{data.title}</h2>
           <p style={{width: `${cardWidth-30}px`}}><strong>{data.salary}</strong>
             {data.date && ` | ${data.date}`}

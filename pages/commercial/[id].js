@@ -16,23 +16,42 @@ import { firestore as db } from "firebase/firebase";
 import useData from "context/data";
 import Image from "next/image";
 
-const JobSingleDynamicV3 = ({commercialData}) => {
+const JobSingleDynamicV3 = () => {
   const router = useRouter();
   const [data, setData] = useState({});
   const id = router.query.id;
   const {fetch_from_id} = useData()
 
-
+  const [commercialData, setCommercialData] = useState({})
 
   useEffect(()=> {
-    if(!commercialData){
-      alert("해당 광고는 삭제됬거나 존재하지 않습니다.")
-      router.back()
-    }else if(commercialData.mode!=="게재중"){
-      alert("해당 광고는 현재 게재중이지 않습니다.")
-      router.back()
+    const fetchData = async () => {
+      const doc = await db.collection('type').doc('alimbang').collection("commercials").doc(id).get()
+      if(doc.exists){
+        const comDa = {
+          commercialType: doc.data().commercialType ?? null,
+          title: doc.data().title ?? null,
+          companyValues: doc.data().companyValues ?? null,
+          salary: doc.data().salary ?? null,
+          date: doc.data().date ?? null,
+          time: doc.data().time ?? null,
+          location: doc.data().location ?? null,
+          info: doc.data().info ?? null,
+          condition: doc.data().condition ?? null,
+          commercialUrl: doc.data().commercialUrl ?? null,
+          content: doc.data().content ?? null,
+          contact: doc.data().contact ?? null
+        }
+        setCommercialData(comDa)
+      }else{
+        alert("해당 광고가 삭제되었거나 존재하지 않습니다.")
+        router.back()
+      }
     }
-  },[commercialData])
+    if(id)
+    fetchData()
+
+  },[id])
 
 
   
@@ -125,29 +144,29 @@ const JobSingleDynamicV3 = ({commercialData}) => {
   );
 };
 
-export async function getServerSideProps ({params}) {
-  const doc = await db.collection('type').doc('alimbang').collection("commercials").doc(params.id).get()
-  if(doc.exists){
-    const commercialData = {
-      commercialType: doc.data().commercialType ?? null,
-      title: doc.data().title ?? null,
-      companyValues: doc.data().companyValues ?? null,
-      salary: doc.data().salary ?? null,
-      date: doc.data().date ?? null,
-      time: doc.data().time ?? null,
-      location: doc.data().location ?? null,
-      info: doc.data().info ?? null,
-      condition: doc.data().condition ?? null,
-      commercialUrl: doc.data().commercialUrl ?? null,
-      content: doc.data().content ?? null,
-      contact: doc.data().contact ?? null
-    }
-      return {props: {commercialData: commercialData}}
+// export async function getServerSideProps ({params}) {
+//   const doc = await db.collection('type').doc('alimbang').collection("commercials").doc(params.id).get()
+//   if(doc.exists){
+//     const commercialData = {
+//       commercialType: doc.data().commercialType ?? null,
+//       title: doc.data().title ?? null,
+//       companyValues: doc.data().companyValues ?? null,
+//       salary: doc.data().salary ?? null,
+//       date: doc.data().date ?? null,
+//       time: doc.data().time ?? null,
+//       location: doc.data().location ?? null,
+//       info: doc.data().info ?? null,
+//       condition: doc.data().condition ?? null,
+//       commercialUrl: doc.data().commercialUrl ?? null,
+//       content: doc.data().content ?? null,
+//       contact: doc.data().contact ?? null
+//     }
+//       return {props: {commercialData: commercialData}}
 
-  }
+//   }
 
-  return {props: {commercialData: false}}
-}
+//   return {props: {commercialData: false}}
+// }
 export default JobSingleDynamicV3
 // export default dynamic(() => Promise.resolve(JobSingleDynamicV3), {
 //   ssr: false,

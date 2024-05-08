@@ -53,11 +53,11 @@ const Component = () => {
   
   return(
     <div className={styles.main_container}>
-      <h1>프리미엄 {selected}</h1>
-      <h2>
+      <h2>프리미엄 {selected}</h2>
+      <h3>
         시흥 알림방의 프리미엄 {selected}
         을 확인하세요!
-      </h2>
+      </h3>
 
       <div className={styles.button_container}>
         {/* <div className={styles.button_wrap} */}
